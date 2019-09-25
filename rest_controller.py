@@ -15,18 +15,30 @@ cosine_calculator = CosineSimilitudeCalculator(pm.keywords_dict)
 def get_recommendation_by_review():
 
 	item_key = 'item'
+	tail_length_key = 'recommendations'
 
 	if not request.json or item_key not in request.json:
 		return 'Empty payload',400
 
 	item_number = request.json[item_key]
+
+	if tail_length_key in request.json:
+		recommendations_length = request.json[tail_length_key]
+	else:
+		recommendations_length = 20
+
+	item = pm.get_item(item_number)
+
+	if item.empty:
+		return 'Invalid item',400
+
+	item_indexes = cosine_calculator.get_similar_items(item.index.item(),recommendations_length)
+
 	response = {}
 	response['movies'] = []
-	response['movies'].append('Ni mierda')
-	response['movies'].append('Ni mierda 2')
-	response['movies'].append('Ni mierda 3: El juego final')
 
-	print(cosine_calculator.get_similar_items(item_number,20))
+	for i in item_indexes:
+		response['movies'].append(pm.get_item_by_internal_id(i))
 
 	return jsonify(response),200
 
@@ -37,12 +49,12 @@ def get_movie_name():
 	if not item_id:
 		return 'No id was sent',400
 
-	item_name = pm.get_item_name(item_id)
+	item = pm.get_item(item_id)
 
-	if not item_name:
+	if item.empty:
 		return '',204
 
-	return item_name,200
+	return item.original_title.iloc[0],200
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',port=8082)
