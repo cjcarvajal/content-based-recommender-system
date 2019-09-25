@@ -9,11 +9,11 @@ A content recommender system may be as broad as it's needed, for example, in the
 Lets see some example of the system running:
 
 <div style="text-align:center">
-<img src="https://github.com/cjcarvajal/content-based-recommender-system/blob/master/resources/img1.png" width="400" style="display:block; margin:auto;">	
+<img src="https://github.com/cjcarvajal/content-based-recommender-system/blob/master/resources/img1.png" width="600" style="display:block; margin:auto;">	
 </div>
 
 <div style="text-align:center">
-<img src="https://github.com/cjcarvajal/content-based-recommender-system/blob/master/resources/img2.png" width="400" style="display:block; margin:auto;">	
+<img src="https://github.com/cjcarvajal/content-based-recommender-system/blob/master/resources/img2.png" width="600" style="display:block; margin:auto;">	
 </div>
 
 ## How it works?
