@@ -6,11 +6,13 @@ A content recommender system, in contrast to a collaborative filtering system, d
 
 A content recommender system may be as broad as it's needed, for example, in the movie context, one could add the actors, director or soundtrack composer (please be Ennio Morricone or Hans Zimmer) as metadata.
 
-Lets see some example of the system running:
+Lets see some example of the system running, if we search for an item by id, we meet a well known movie:
 
 <div style="text-align:center">
 <img src="https://github.com/cjcarvajal/content-based-recommender-system/blob/master/resources/img1.png" width="600" style="display:block; margin:auto;">	
 </div>
+
+Then if we ask the system about recommendations related to that item we get the following:
 
 <div style="text-align:center">
 <img src="https://github.com/cjcarvajal/content-based-recommender-system/blob/master/resources/img2.png" width="600" style="display:block; margin:auto;">	
