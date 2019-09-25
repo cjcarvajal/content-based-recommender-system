@@ -1,6 +1,6 @@
 # Content Based Recommender System
 
-<div style="text-align:center;margin:0 auto;">
+<div style="text-align:center">
 <img src="https://github.com/cjcarvajal/content-based-recommender-system/blob/master/resources/demo.gif" width="600" style="display:block; margin:auto;">	
 </div>
 
