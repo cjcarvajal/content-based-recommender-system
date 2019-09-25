@@ -2,7 +2,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from nltk.tokenize import sent_tokenize
 
-class CosineSimilitudeCalculator:
+class CosineSimilarityCalculator:
 
 	def __init__(self,corpus_df):
 		self.corpus = corpus_df.copy()

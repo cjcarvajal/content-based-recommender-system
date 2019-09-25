@@ -3,13 +3,13 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS, cross_origin
 from flask import request
 from persistence_manager import PersistenceManager
-from cosine_similitude_calculator import CosineSimilitudeCalculator
+from cosine_similarity_calculator import CosineSimilarityCalculator
 
 app = Flask(__name__)
 CORS(app,resources=r'/*')
 
 pm = PersistenceManager()
-cosine_calculator = CosineSimilitudeCalculator(pm.keywords_dict)
+cosine_calculator = CosineSimilarityCalculator(pm.keywords_dict)
 
 @app.route('/item/review',methods=['POST'])
 def get_recommendation_by_review():
