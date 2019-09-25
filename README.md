@@ -1,5 +1,9 @@
 # Content Based Recommender System
 
+<div style="text-align:center;margin:0 auto;">
+<img src="https://github.com/cjcarvajal/content-based-recommender-system/blob/master/resources/demo.gif" width="600" style="display:block; margin:auto;">	
+</div>
+
 ## What it does?
 
 A content recommender system, in contrast to a collaborative filtering system, depends on the content of the items (as you might guess) instead of the ratings given by other users to the same items. One question rises and is how the system knows the content of an item? There is no magic here, the system needs metadata about the items to know their content, so each time a new item enters the system it needs to have this metadata in order to be recommended. For this demo, the items are movies, and the content is described by **keywords** that describe the content, for example an item like **Jurassic Park** has "dinosaur" as a keyword on its metadata. The system, compares the metadata of all items and returns the more similar items.
@@ -35,7 +39,3 @@ You just need to start the rest_controller.py and voila!, I also added a Postman
 ## Where do I got the data?
 
 The files keywords.csv and titles.csv are prepocessed from original ones. The original files belongs to [Kaggle](https://www.kaggle.com/), specifically to [The Movies Dataset](https://www.kaggle.com/rounakbanik/the-movies-dataset), the intellectual property of this files and all right reserved belongs to Kaggle.
-
-<div style="text-align:center">
-<img src="https://github.com/cjcarvajal/content-based-recommender-system/blob/master/resources/demo.gif" width="600" style="display:block; margin:auto;">	
-</div>
