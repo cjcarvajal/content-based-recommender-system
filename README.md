@@ -30,6 +30,8 @@ There are just three components, the controller, the persistence manager and the
 
 * **cosine_similarity_calculator.py** here is where the magic take place, using [sklearn](https://scikit-learn.org/stable/) the metadata is translated to vectors, then the similarity between all vectors is calculated using cosine metric, these calculation is stored in a matrix and its possible to get the most similar vectors to a specific one, later this vectors are translated to items which are then returned as recommendations.
 
+You just need to start the rest_controller.py and voila!, I also added a Postman collection so you could use the exposed enpoints.
+
 ## Where do I got the data?
 
 The files keywords.csv and titles.csv are prepocessed from original ones. The original files belongs to [Kaggle](https://www.kaggle.com/), specifically to [The Movies Dataset](https://www.kaggle.com/rounakbanik/the-movies-dataset), the intellectual property of this files and all right reserved belongs to Kaggle.
