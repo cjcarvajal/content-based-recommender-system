@@ -18,7 +18,7 @@ Then if we ask the system about recommendations related to that item we get the 
 <img src="https://github.com/cjcarvajal/content-based-recommender-system/blob/master/resources/img2.png" width="600" style="display:block; margin:auto;">	
 </div>
 
-A disadvantage of the content recommender approach is that you miss the [serendipity](https://dl.acm.org/citation.cfm?id=3009209.3009262) feature and you just get "more of the same", nevertheless is a great approach to tackle the [cold start](https://en.wikipedia.org/wiki/Cold_start_(computing)) issue, and of course, you could combine this approach with others to create a hybrid system.
+A disadvantage of the content recommender approach is that you miss the [serendipity](https://dl.acm.org/citation.cfm?id=3009209.3009262) feature and you just get "more of the same", nevertheless is a great approach to tackle the [cold start](https://en.wikipedia.org/wiki/Cold_start_(computing)) issue, and of course, you could combine this approach with others to create a hybrid system, you could read more [here](https://leantechblog.wordpress.com/2018/01/03/how-does-netflix-or-spotify-knows-what-you-like-a-briefing-on-recommender-systems/).
 
 ## How it works?
 
