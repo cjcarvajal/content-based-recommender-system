@@ -28,7 +28,7 @@ A disadvantage of the content recommender approach is that you miss the [serendi
 
 There are just three components, the controller, the persistence manager and the similarity calculator.
 
-* **rest_controller.py** it uses [Flask](https://flask.palletsprojects.com/en/1.1.x/) framework to expose two endpoints, an item query which receives the internal item id an returns its name, and a recommendations query, which also, receives an item id that represents the item liked by the user and returns similar-by-content items.
+* **rest_controller.py** it uses [Flask](https://flask.palletsprojects.com/en/1.1.x/) framework to expose two endpoints, an item query which receives the internal item id and returns its name, and a recommendations query, which also, receives an item id that represents the item liked by the user and returns similar-by-content items.
 
 * **persistence_manager.py** it loads into memory the files with the items names and metadata and isolate the access to them.
 
